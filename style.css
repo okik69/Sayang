@@ -31,15 +31,15 @@ body{
 .lyrics {
   font-size: 14px;
   line-height: 2; /* Jarak antar baris */
-  text-align: right;
+  text-align: Left;
   margin: 0;
-  left: 20px;
+  left: 50px;
   color: white; /* Kontras dengan latar merah */
   font-family: 'Poppins', sans-serif; /* Font bersih dan mudah dibaca */
 }
 
 .lyrics p {
-  margin: 30px 0; /* Jarak antar paragraf lirik */
+  margin: 20px 0; /* Jarak antar paragraf lirik */
 }
 
 .lyrics .section-title {
