@@ -99,17 +99,33 @@ body{
     transform: rotate(30deg);
     
 }
-.btn{
+.btn {
+  width: 28px;
+  height: 28px;
+  background-color: #ed5650;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  border: 3.5px solid rgb(190, 39, 42);
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn::before {
   content: '';
   width: 0;
   height: 0;
-  border-left: 8px solid white; /* Warna ikon play */
+  border-left: 8px solid white; /* Ikon play berwarna putih */
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-40%, -50%); /* Menyesuaikan posisi ikon play */
+  transform: translate(-40%, -50%); /* Memusatkan ikon play */
 }
 .slider{
     -webkit-appearance: none;
