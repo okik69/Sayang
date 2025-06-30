@@ -12,10 +12,21 @@ body{
     position:absolute;
     transform: translate(-50%,-50%);
     left:50%;
-    top:10%;
+    top:20%;
     border-radius: 10px;
     box-shadow: 0 8px 0 0 #be2728;
 
+}
+.lirik{
+  background-color: #d52831; /* Warna sama dengan elemen pertama */
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  transform: translate(-50%, 0); /* Hanya geser horizontal untuk pusat */
+  left: 50%;
+  top: calc(10% + 190px + 20px); /* Posisi di bawah elemen pertama dengan jarak 20px */
+  border-radius: 10px;
+  box-shadow: 0 8px 0 0 #be2728; 
 }
 .record{
     width:175px;
