@@ -33,7 +33,7 @@ body{
   line-height: 2; /* Jarak antar baris */
   text-align: Left;
   margin: 0;
-  left: 10%;
+  padding-left: 10%; /* Jarak 10% dari kiri */
   color: white; /* Kontras dengan latar merah */
   font-family: 'Poppins', sans-serif; /* Font bersih dan mudah dibaca */
 }
