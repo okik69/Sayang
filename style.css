@@ -20,7 +20,7 @@ body{
 .lirik{
   background-color: #d52831; /* Warna sama dengan elemen pertama */
   width: 400px;
-  height: 1600px;
+  height: 1100px;
   position: absolute;
   transform: translate(-50%, 0); /* Hanya geser horizontal untuk pusat */
   left: 50%;
@@ -33,13 +33,13 @@ body{
   line-height: 2; /* Jarak antar baris */
   text-align: Left;
   margin: 0;
-  left: 50px;
+  left: 10%;
   color: white; /* Kontras dengan latar merah */
   font-family: 'Poppins', sans-serif; /* Font bersih dan mudah dibaca */
 }
 
 .lyrics p {
-  margin: 20px 0; /* Jarak antar paragraf lirik */
+  margin: 18px 0; /* Jarak antar paragraf lirik */
 }
 
 .lyrics .section-title {
