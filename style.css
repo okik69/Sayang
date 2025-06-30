@@ -12,7 +12,7 @@ body{
     position:absolute;
     transform: translate(-50%,-50%);
     left:50%;
-    top:50%;
+    top:10%;
     border-radius: 10px;
     box-shadow: 0 8px 0 0 #be2728;
 
@@ -100,17 +100,16 @@ body{
     
 }
 .btn{
-    width: 28px;
-    height:28px;
-    background-color: #ed5650;
-    border-radius: 50%;
-    position: absolute;
-    bottom:20px;
-    right:30px;
-    border:none;
-    border:3.5px solid rgb(190,39,42);
-    outline:none;
-    cursor: pointer;
+    width: 60px;
+height: 60px;
+background-color: #ed5650;
+border-radius: 12px;   /* sudut membulat */
+position: absolute;
+bottom: 20px;
+right: 30px;
+border: 3.5px solid rgb(190,39,42);
+outline: none;
+cursor: pointer;
 }
 .slider{
     -webkit-appearance: none;
