@@ -7,7 +7,7 @@ body{
 }
 .player{
     background-color: #d52831;
-    width:330px;
+    width:380px;
     height: 190px;
     position:absolute;
     transform: translate(-50%,-50%);
