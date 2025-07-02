@@ -7,20 +7,23 @@ const lyricLines = document.querySelectorAll('.lyric-line');
 let state = false;
 let lastActiveIndex = -1;
 
-btn.addEventListener('click', () => {
-  if (!state) {
-    record.classList.add('on');
-    toneArm.classList.add('play');
-    setTimeout(() => {
-      song.play();
-      updateLyrics();
-    }, 1000);
-  } else {
-    record.classList.remove('on');
-    toneArm.classList.remove('play');
-    song.pause();
-  }
-  state = !state;
+btn.addEventListener("click", () => {
+    if(state == false){
+        record.classList.add("on");
+        toneArm.classList.add("play");
+        setTimeout(() => {
+            song.play();
+          updateLyrics()
+        },1000);
+
+    else{
+        record.classList.remove("on");
+        toneArm.classList.remove("play");
+        song.pause();
+
+    }
+    state = !state;
+    
 });
 
 // Update durasi slider berdasarkan durasi lagu
