@@ -82,7 +82,7 @@ body {
   position: absolute;
   transform: translate(-50%, 0); /* Hanya geser horizontal untuk pusat */
   left: 50%;
-  top: calc(20% + 190px + 20px); /* Posisi di bawah elemen pertama dengan jarak 20px */
+  top: calc(25% + 190px + 20px); /* Posisi di bawah elemen pertama dengan jarak 20px */
   border-radius: 10px;
   box-shadow: 0 8px 0 0 #374746; 
 }
