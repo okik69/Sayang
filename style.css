@@ -7,8 +7,8 @@ body{
 }
 .player{
     background-color: #d52831;
-    width:380px;
-    height: 190px;
+    width:40%;
+    height: 20%;
     position:absolute;
     transform: translate(-50%,-50%);
     left:50%;
