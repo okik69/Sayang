@@ -196,8 +196,8 @@ body{
     
 }
 .btn{
-    width: 28px;
-    height:28px;
+    width: 33px;
+    height:33px;
     background-color: #ed5650;
     border-radius: 50%;
     position: absolute;
@@ -207,6 +207,18 @@ body{
     border:3.5px solid rgb(190,39,42);
     outline:none;
     cursor: pointer;
+}
+.btn::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 8px solid white; /* Warna ikon play */
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-40%, -50%); /* Menyesuaikan posisi ikon play */
 }
 .slider{
     -webkit-appearance: none;
