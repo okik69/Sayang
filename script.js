@@ -6,6 +6,32 @@ let song = document.querySelector(".my-song");
 let slider = document.querySelector(".slider");
 const audio = document.querySelector('.my-song');
 const musicBar = document.querySelector('.music-bar');
+const button = document.getElementById('overlay-button');
+  const text = document.getElementById('overlay-text');
+
+  // Array teks
+  const messages = [
+    'i hope u understand',
+    'please record your reaction',
+    'remember to be honest',
+    'thank you for your time', 
+    'thank you for your timetes2'
+  ];
+
+  let step = 0;
+
+  button.addEventListener('click', () => {
+    step++;
+    if(step < messages.length){
+      text.textContent = messages[step];
+      if(step === messages.length - 1){
+        button.textContent = 'Close';
+      }
+    } else {
+      document.getElementById('overlay').style.display = 'none';
+    }
+  });
+
 
 // Update progress bar saat audio diputar
 audio.addEventListener('timeupdate', () => {
