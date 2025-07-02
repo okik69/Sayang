@@ -114,8 +114,8 @@ body{
     outline: none;
 }
 .record{
-    width:40vw;
-    height: 40vw;
+    width:30vw;
+    height: 30vw;
     background-color: #181312;
     position:absolute;
     border-radius: 50%;
@@ -227,8 +227,8 @@ body{
     width: 90px;
     height:7px;
     position: absolute;
-    left:233px;
-    top:60px;
+    left:70%;
+    top:30%;
     background-color: #be272a;
     outline: none;
     border-radius: 3px;
