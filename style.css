@@ -48,12 +48,58 @@ body{
   margin: 15px 0 10px;
   text-align: center;
 }
-.music-bar-container {
-    width: 80%;
-    margin: 10px auto;
-}
 .music-bar {
-    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    width: 80%;
+    height: 8px;                   /* Sesuaikan dengan .slider */
+    background: #d3d3d3;           /* Sesuaikan dengan .slider */
+    outline: none;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: background 0.2s;
+}
+
+/* Style thumb agar mirip .slider */
+.music-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #ff69b4;
+    cursor: pointer;
+    box-shadow: 0 0 2px #222;
+    transition: background 0.2s;
+}
+.music-bar::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #ff69b4;
+    cursor: pointer;
+    box-shadow: 0 0 2px #222;
+    transition: background 0.2s;
+}
+.music-bar::-ms-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #ff69b4;
+    cursor: pointer;
+    box-shadow: 0 0 2px #222;
+    transition: background 0.2s;
+}
+
+/* Hilangkan outline di Firefox */
+.music-bar:focus {
+    outline: none;
 }
 .record{
     width:175px;
