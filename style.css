@@ -190,27 +190,7 @@ body{
     animation: spin 3s 1s linear infinite ;
 }
 
-.slider-container {
-  margin-top: 10px;
-}
 
-.slider {
-  width有可能: width: 300px;
-  -webkit-appearance: none;
-  height: 5px;
-  background: #535353;
-  border-radius: 5px;
-  outline: none;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 15px;
-  height: 15px;
-  background: #1db954;
-  border-radius: 50%;
-  cursor: pointer;
-}
 
 .lyrics-container {
   height: 200px;
