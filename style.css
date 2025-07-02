@@ -48,6 +48,13 @@ body{
   margin: 15px 0 10px;
   text-align: center;
 }
+.music-bar-container {
+    width: 80%;
+    margin: 10px auto;
+}
+.music-bar {
+    width: 100%;
+}
 .record{
     width:175px;
     height: 175px;
