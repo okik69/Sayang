@@ -114,8 +114,8 @@ body{
     outline: none;
 }
 .record{
-    width:175px;
-    height: 175px;
+    width:34vw;
+    height: 34vw;
     background-color: #181312;
     position:absolute;
     border-radius: 50%;
@@ -151,8 +151,8 @@ body{
 
 }
 .tone-arm{
-    height:90px;
-    width:6px;
+    height:15vw;
+    width:4vw;
     background-color: #ffffff;
     position:absolute;
     top:25px;
@@ -164,8 +164,8 @@ body{
 
 .control{
     background-color: #181312;
-    width:17px;
-    height:17px;
+    width:4vw;
+    height:4vh;
     border:10px solid #2c2c2c;
     border-radius: 50%;
     position:absolute;
