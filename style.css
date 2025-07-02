@@ -1,4 +1,4 @@
-*{
+{
     padding:0;
     margin:0;
 }
@@ -227,7 +227,7 @@ body{
     width: 90px;
     height:7px;
     position: absolute;
-    left:78%;
+    left:76%;
     top:30%;
     background-color: #be272a;
     outline: none;
