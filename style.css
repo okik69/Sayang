@@ -1,4 +1,4 @@
-{
+*{
     padding:0;
     margin:0;
 }
@@ -24,19 +24,19 @@ body{
     height: 30%;             /* Tinggi 40% layar */
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 30%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
     box-shadow: 0 8px 0 0 #be2728;
 }
 .lirik{
   background-color: #d52831; /* Warna sama dengan elemen pertama */
-  width: 400px;
+  width: 80%;
   height: 1300px;
   position: absolute;
   transform: translate(-50%, 0); /* Hanya geser horizontal untuk pusat */
   left: 50%;
-  top: calc(10% + 190px + 20px); /* Posisi di bawah elemen pertama dengan jarak 20px */
+  top: calc(20% + 190px + 20px); /* Posisi di bawah elemen pertama dengan jarak 20px */
   border-radius: 10px;
   box-shadow: 0 8px 0 0 #be2728; 
 }
@@ -227,7 +227,7 @@ body{
     width: 90px;
     height:7px;
     position: absolute;
-    left:74%;
+    left:65%;
     top:30%;
     background-color: #be272a;
     outline: none;
