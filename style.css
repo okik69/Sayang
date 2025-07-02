@@ -21,7 +21,7 @@ body{
 .player {
     background-color: #d52831;
     width: 80vw;              /* Lebar 80% layar */
-    height: 40vh;             /* Tinggi 40% layar */
+    height: 35vh;             /* Tinggi 40% layar */
     position: absolute;
     left: 50%;
     top: 20%;
