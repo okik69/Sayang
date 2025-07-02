@@ -20,8 +20,8 @@ body{
 } */
 .player {
     background-color: #d52831;
-    width: 80vw;              /* Lebar 80% layar */
-    height: 35vh;             /* Tinggi 40% layar */
+    width:80%;              /* Lebar 80% layar */
+    height: 30%;             /* Tinggi 40% layar */
     position: absolute;
     left: 50%;
     top: 20%;
@@ -114,13 +114,13 @@ body{
     outline: none;
 }
 .record{
-    width:34vw;
-    height: 34vw;
+    width:30vw;
+    height: 30vw;
     background-color: #181312;
     position:absolute;
     border-radius: 50%;
-    top:10px;
-    left:20px;
+    top:10%;
+    left:10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,18 +129,18 @@ body{
 .record:after{
     content:' ';
     position:absolute;
-    border:5px solid transparent;
+    border:2vw solid transparent;
     border-top-color:#2c2424;
     border-bottom-color:#2c2424;
     border-radius:50%;
 }
 .record:before{
-    width:135px;
-    height: 135px;
+    width:70%;
+    height: 70%;
 }
 .record:after{
-    width:95px;
-    height: 95px;
+    width:30%;
+    height: 30%;
 }
 .label{
     height: 15px;
@@ -151,12 +151,12 @@ body{
 
 }
 .tone-arm{
-    height:15vw;
-    width:4vw;
+    height:13vw;
+    width:3vw;
     background-color: #ffffff;
     position:absolute;
-    top:25px;
-    right:95px;
+    top:20%;
+    right:32%;
     transform:1s;
     transform-origin:top;
 
@@ -164,8 +164,8 @@ body{
 
 .control{
     background-color: #181312;
-    width:4vw;
-    height:4vh;
+    width:2vw;
+    height:2vh;
     border:10px solid #2c2c2c;
     border-radius: 50%;
     position:absolute;
