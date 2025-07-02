@@ -5,7 +5,7 @@
 body{
     background-color: #f8d76e;
 }
-.player{
+/* .player{
     background-color: #d52831;
     width: 80%;
     height: 250px;
@@ -17,6 +17,17 @@ body{
     border-radius: 10px;
     box-shadow: 0 8px 0 0 #be2728;
 
+} */
+.player {
+    background-color: #d52831;
+    width: 80vw;              /* Lebar 80% layar */
+    height: 40vh;             /* Tinggi 40% layar */
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 8px 0 0 #be2728;
 }
 .lirik{
   background-color: #d52831; /* Warna sama dengan elemen pertama */
