@@ -4,6 +4,22 @@ let record = document.querySelector(".record");
 let toneArm = document.querySelector(".tone-arm");
 let song = document.querySelector(".my-song");
 let slider = document.querySelector(".slider");
+const audio = document.querySelector('.my-song');
+const musicBar = document.querySelector('.music-bar');
+
+// Update progress bar saat audio diputar
+audio.addEventListener('timeupdate', () => {
+    if (audio.duration) {
+        musicBar.value = (audio.currentTime / audio.duration) * 100;
+    }
+});
+
+// Untuk seek (lompat ke waktu tertentu saat user menggeser bar)
+musicBar.addEventListener('input', () => {
+    if (audio.duration) {
+        audio.currentTime = (musicBar.value / 100) * audio.duration;
+    }
+});
 
 btn.addEventListener("click", () => {
     if(state == false){
