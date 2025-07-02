@@ -31,7 +31,7 @@ body{
 }
 .lirik{
   background-color: #d52831; /* Warna sama dengan elemen pertama */
-  width: 80%;
+  width: 87%;
   height: 1300px;
   position: absolute;
   transform: translate(-50%, 0); /* Hanya geser horizontal untuk pusat */
