@@ -15,7 +15,7 @@ const button = document.getElementById('overlay-button');
     'please record your reaction',
     'remember to be honest',
     'thank you for your time', 
-    'thank you for your timetes2'
+    'Wrote this song for you ❤️❤️❤️ and I f💀cking love you 💕💖💗'
   ];
 
   let step = 0;
