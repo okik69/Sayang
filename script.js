@@ -11,10 +11,10 @@ const button = document.getElementById('overlay-button');
 
   // Array teks
   const messages = [
-    'i hope u understand',
+    '💍To my future wife',
     'please record your reaction',
     'remember to be honest',
-    'thank you for your time', 
+    'thank you for your time & love', 
     'Wrote this song for you ❤️❤️❤️\And I f💀cking love you 💕💖💗'
   ];
 
