@@ -79,7 +79,7 @@ white-space: pre-line;
 .lirik{
   background-color: #6E8F8D; /* Warna sama dengan elemen pertama */
   width: 95%;
-  height: 1300px;
+  height: 1450px;
   position: absolute;
   transform: translate(-50%, 0); /* Hanya geser horizontal untuk pusat */
   left: 50%;
