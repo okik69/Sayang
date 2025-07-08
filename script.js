@@ -12,10 +12,12 @@ const button = document.getElementById('overlay-button');
   // Array teks
   const messages = [
     '💍To my future wife',
-    'please record your reaction',
-    'remember to be honest',
+  'Buka kado yang aku kasih',
+    'Ikuti instruksi dengan pelan dan hati-hati \Karena bisa meledak 😝😝😝',
+ 'Pada charge pada bagian belakang bawah dengan USB type C',
+ 'Jika cahaya lampu sudah mengala tekan tombol dj bawah samping kiri',
     'thank you for your time & love', 
-    'Wrote this song for you ❤️❤️❤️\And I f💀cking love you 💕💖💗'
+   'Aku tulis lagu ini untuk kamu ❤️❤️\And I f💀cking love you 💕💖💗'
   ];
 
   let step = 0;
