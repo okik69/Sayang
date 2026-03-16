@@ -1,101 +1,359 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <title>Kado Cinta Kecil • Untuk Juanita</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap');
+        
+        :root {
+            --pink: #ff69b4;
+            --red: #ff1493;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 0 40px rgba(255, 105, 180, 0.4);
+        }
+
+        .liquid-bg {
+            background: linear-gradient(135deg, #ff1493, #ff69b4, #ff1493);
+            background-size: 300% 300%;
+            animation: liquid 8s ease infinite;
+        }
+
+        @keyframes liquid {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .heart-float {
+            position: absolute;
+            font-size: 24px;
+            color: #ff69b4;
+            opacity: 0.6;
+            animation: floatHeart 12s linear infinite;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        @keyframes floatHeart {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100vh) rotate(360deg); }
+        }
+
+        .typewriter {
+            overflow: hidden;
+            border-right: 3px solid #ff69b4;
+            white-space: pre-wrap;
+            animation: blink 0.7s step-end infinite;
+        }
+
+        .gallery-card {
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            transform-style: preserve-3d;
+        }
+        
+        .gallery-card:hover {
+            transform: scale(1.08) rotateY(12deg) rotateX(8deg);
+            box-shadow: 0 0 60px rgba(255, 105, 180, 0.6);
+        }
+
+        .love-meter-fill {
+            transition: width 3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+    </style>
 </head>
-<body>
- <div class="overlay" id="overlay">
-  <div class="overlay-content">
-    <p id="overlay-text">💍To my future wife</p>
-    <button id="overlay-button">Next</button>
-  </div>
-</div>
-<!-- Konten halaman utama -->
-<div class="main-content">
-
-    <div class="player">
-    <div class="record">
-        <div class="label"></div>
-    </div>
-    <div class="tone-arm">
-        <div class="control"></div>
-    </div>
-    <button class="btn"></button>
-    <div class="music-bar-container">
-        <input type="range" class="music-bar" min="0" max="100" value="0">
-    </div>
-    <div class="slider-container">
-        <input type="range" class="slider" min="0" max="1" step="0.1" value="0.7">
-    </div>
-</div>
-  <div class="lirik">
-
-    <div class="lyrics">
-    <h1>Dalam Takdir Kita</h1>
-    <p class="dedication">To: My love Anggie</p>
-    <p class="dedication">By: Your Future Husband</p>
-
-     <p class="section-title">[Verse 1]</p>
-<p>Pernah kita diam, tak saling cari<br>
-Waktu jadi jarak, dan doa jadi nyeri<br>
-Kupikir selesai… tapi Tuhan tak usai<br>
-Dia simpan namamu di ujung malamku</p>
-
-<p class="section-title">[Verse 2]</p>
-<p>Kau datang bukan dengan tanya<br>
-Tapi dengan tenang, dan kata,<br>
-"Sudah waktunya pulang"<br>
-Kita tak sempurna, tapi saling paham<br>
-Kita luka, tapi tetap sayang</p>
-
-<p class="section-title">[Chorus]</p>
-<p>Kita mungkin pernah hilang<br>
-Tapi tak pernah benar-benar pergi<br>
-Jika esok badai datang,<br>
-Genggam tanganku, jangan sembunyi<br>
-Kalau pun dunia nanti letih<br>
-Kita cukup jadi pelukan pagi</p>
-
-<p class="section-title">[Verse 3]</p>
-<p>Dulu kita bertengkar karena takut kehilangan<br>
-Sekarang kita diam karena saling menjaga<br>
-Tak perlu janji yang tinggi<br>
-Cukup tatap, dan tetap di sini</p>
-
-<p class="section-title">[Bridge]</p>
-<p>Aku tak ingin bahagia terus<br>
-Aku ingin nyata<br>
-Tangis pun, asal bersamamu<br>
-Karena kau rumah—bukan tempat<br>
-Tapi tempat hati tak bertanya arah</p>
-
-<p class="section-title">[Chorus (reprise)]</p>
-<p>Jika nanti aku ragu<br>
-Ingatkan aku pada hari ini<br>
-Saat Tuhan menyatukan kita kembali<br>
-Kita tak akan kuat sendiri<br>
-Tapi bersama, kita cukup berarti</p>
-
-<p class="section-title">[Outro]</p>
-<p>Dan jika dunia memisah lagi…<br>
-Kita tahu arah pulang<br>
-Namamu masih di doaku<br>
-Dan hatimu… masih tempatku tenang</p>
-    </div>
-  </div>
-</div>
-    <audio loop class="my-song" src="audio.mp3" preload="auto"></audio>
+<body class="bg-gradient-to-br from-[#1a0a1f] via-[#3d0b2b] to-[#6b0f3a] min-h-screen overflow-hidden relative text-white">
     
+    <!-- Floating Hearts Background -->
+    <div id="hearts-container" class="fixed inset-0 pointer-events-none z-10"></div>
 
+    <!-- POPUP AWAL -->
+    <div id="popup" class="fixed inset-0 flex items-center justify-center z-50 bg-black/70">
+        <div class="glass max-w-lg w-full mx-4 p-10 rounded-3xl text-center relative overflow-hidden">
+            <div class="liquid-bg absolute inset-0 opacity-20"></div>
+            
+            <div class="relative z-20">
+                <div class="flex justify-center mb-6">
+                    <div class="text-7xl animate-bounce">🎁❤️</div>
+                </div>
+                <h1 class="title-font text-4xl md:text-5xl leading-tight mb-8 text-pink-200">
+                    Walau hari ini bukan hari ulang tahun kamu<br>
+                    <span class="text-white">tapi ini kado kecil bukti cinta ku</span>
+                </h1>
+                <p class="text-pink-300 text-lg mb-10">Untuk Juanita, dari Pacar yang selalu sayang kamu</p>
+                
+                <button onclick="startJourney()" 
+                        class="group relative px-10 py-5 bg-white text-[#3d0b2b] font-medium text-xl rounded-2xl overflow-hidden transition-all hover:scale-105 active:scale-95">
+                    <span class="relative z-10 flex items-center gap-3">
+                        Buka Kado Cinta Ku 
+                        <span class="text-3xl group-active:rotate-12 transition-transform">→</span>
+                    </span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-pink-400 to-red-500 translate-y-full group-hover:translate-y-0 transition-transform"></div>
+                </button>
+            </div>
+        </div>
+    </div>
 
+    <!-- MAIN CONTENT -->
+    <div id="main-content" class="hidden min-h-screen relative z-20">
+        
+        <!-- HEADER -->
+        <div class="flex justify-between items-center p-6 border-b border-white/10">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-white/10 backdrop-blur rounded-2xl flex items-center justify-center text-2xl">❤️</div>
+                <div>
+                    <p class="text-xs tracking-widest text-pink-300">KADO CINTA SPESIAL</p>
+                    <p class="title-font text-2xl text-white">Juanita</p>
+                </div>
+            </div>
+            <button onclick="toggleMusic()" id="music-btn"
+                    class="glass px-6 py-3 rounded-2xl flex items-center gap-2 text-sm hover:bg-white/10">
+                <span id="music-icon">♪</span>
+                <span>Music On</span>
+            </button>
+        </div>
 
+        <!-- TYPEWRITER SECTION -->
+        <div class="max-w-3xl mx-auto px-6 pt-12 pb-16 text-center">
+            <div id="typewriter-container" class="glass p-10 rounded-3xl min-h-[260px] flex items-center justify-center">
+                <p id="typewriter-text" 
+                   class="typewriter text-2xl md:text-3xl leading-relaxed text-pink-100 font-light max-w-2xl mx-auto">
+                </p>
+            </div>
+            
+            <button onclick="showLoveMeter()" 
+                    id="next-to-meter-btn"
+                    class="mt-8 hidden px-12 py-4 bg-gradient-to-r from-pink-500 to-red-500 rounded-3xl text-xl font-medium hover:brightness-110 transition-all">
+                Lihat Bukti Cinta Ku ❤️
+            </button>
+        </div>
 
+        <!-- LOVE METER SECTION -->
+        <div id="love-meter-section" class="hidden max-w-2xl mx-auto px-6 py-12">
+            <div class="glass rounded-3xl p-12 text-center">
+                <h2 class="text-4xl title-font mb-4">Bukti Cinta Meter</h2>
+                <p class="text-pink-300 mb-12">Aku isi 100% hanya untuk kamu, Juanita...</p>
+                
+                <div class="relative mx-auto w-80 h-6 bg-white/10 rounded-full overflow-hidden">
+                    <div id="meter-fill" 
+                         class="love-meter-fill absolute top-0 left-0 h-full bg-gradient-to-r from-pink-400 via-red-400 to-pink-500 rounded-full"
+                         style="width: 0%"></div>
+                </div>
+                
+                <div class="mt-6 flex justify-center gap-8 text-4xl" id="meter-hearts"></div>
+                
+                <div id="meter-result" class="mt-12 text-5xl title-font hidden">
+                    100% <span class="text-pink-300">CINTA ABADI</span>
+                </div>
+                
+                <button onclick="showGallery()" 
+                        class="mt-16 px-12 py-5 text-xl glass hover:bg-white/10 rounded-3xl transition-all">
+                    Lanjut ke Kenangan 3D Kita →
+                </button>
+            </div>
+        </div>
 
-    <script src="script.js"></script>
+        <!-- 3D GALLERY SECTION -->
+        <div id="gallery-section" class="hidden py-12 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <div class="inline-flex items-center gap-3 glass px-8 py-3 rounded-3xl">
+                        <span class="text-4xl">🌎</span>
+                        <h2 class="title-font text-4xl tracking-wider">KENANGAN KITA DALAM DOME 3D</h2>
+                    </div>
+                    <p class="text-pink-300 mt-4 text-lg">Geser mouse untuk melihat efek 3D • Scroll untuk jelajahi</p>
+                </div>
+                
+                <div id="gallery-grid" 
+                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto perspective-[1000px]">
+                    <!-- Images injected by JS (local 1.jpg - 15.jpg) -->
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER LOVE -->
+        <div class="fixed bottom-8 left-1/2 -translate-x-1/2 text-center text-xs text-pink-400/70 tracking-widest">
+            Forever yours — Pacar yang selalu sayang kamu ❤️
+        </div>
+    </div>
+
+    <!-- AUDIO (local backsound.mp3) -->
+    <audio id="bg-music" loop>
+        <source src="backsound.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // ================== FILE LOKAL (sesuai permintaan kamu) ==================
+        const musicUrl = "backsound.mp3"; 
+        
+        const memoryImages = [
+            "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg",
+            "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg",
+            "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg"
+        ];
+        // =====================================================
+
+        const fullMessage = `Walau hari ini bukan hari ulang tahun kamu\ntapi ini kado kecil bukti cinta ku...\n\nJuanita, my dearest love...\n\nKamu adalah alasan aku tersenyum setiap pagi,\nsetiap detik bersamamu terasa seperti mimpi indah yang tak ingin aku bangunkan.\n\nYou are my everything, the light in my darkest days,\nthe beat of my heart, the forever in my always.\n\nAku mencintaimu lebih dalam dari lautan,\nlebih tinggi dari langit, dan akan terus mencintaimu\nsampai bintang-bintang pun lupa cara bersinar.\n\nIni hanya kado kecil... tapi hatiku 100% milikmu selamanya.\n\nForever yours, Pacar yang selalu sayang kamu ❤️`;
+
+        let musicPlaying = true;
+        let audio;
+
+        function createFloatingHearts() {
+            const container = document.getElementById('hearts-container');
+            for (let i = 0; i < 18; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart-float';
+                heart.textContent = ['❤️', '💗', '💖', '💝'][Math.floor(Math.random()*4)];
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.animationDuration = (Math.random() * 8 + 10) + 's';
+                heart.style.animationDelay = '-' + Math.random() * 15 + 's';
+                heart.style.fontSize = (Math.random() * 18 + 22) + 'px';
+                container.appendChild(heart);
+            }
+        }
+
+        function typeWriter(element, text, speed = 35) {
+            element.innerHTML = '';
+            let i = 0;
+            const interval = setInterval(() => {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i) === '\n' ? '<br>' : text.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(interval);
+                    document.getElementById('next-to-meter-btn').classList.remove('hidden');
+                }
+            }, speed);
+        }
+
+        function startJourney() {
+            document.getElementById('popup').style.opacity = '0';
+            setTimeout(() => {
+                document.getElementById('popup').classList.add('hidden');
+                document.getElementById('main-content').classList.remove('hidden');
+                
+                audio = document.getElementById('bg-music');
+                audio.volume = 0.4;
+                audio.play().catch(() => {});
+                
+                const tw = document.getElementById('typewriter-text');
+                typeWriter(tw, fullMessage);
+                
+                createFloatingHearts();
+            }, 800);
+        }
+
+        function showLoveMeter() {
+            document.getElementById('typewriter-container').parentElement.classList.add('hidden');
+            const meterSection = document.getElementById('love-meter-section');
+            meterSection.classList.remove('hidden');
+            
+            setTimeout(() => {
+                document.getElementById('meter-fill').style.width = '100%';
+                
+                const heartsDiv = document.getElementById('meter-hearts');
+                for (let i = 0; i < 7; i++) {
+                    const h = document.createElement('div');
+                    h.textContent = '❤️';
+                    h.style.animation = `floatHeart ${2 + i * 0.3}s ease`;
+                    heartsDiv.appendChild(h);
+                }
+                
+                setTimeout(() => {
+                    document.getElementById('meter-result').classList.remove('hidden');
+                    confetti({
+                        particleCount: 180,
+                        spread: 90,
+                        origin: { y: 0.6 },
+                        colors: ['#ff69b4', '#ff1493', '#ffb6c1']
+                    });
+                }, 2800);
+            }, 300);
+        }
+
+        function showGallery() {
+            document.getElementById('love-meter-section').classList.add('hidden');
+            const gallerySection = document.getElementById('gallery-section');
+            gallerySection.classList.remove('hidden');
+            
+            const grid = document.getElementById('gallery-grid');
+            grid.innerHTML = '';
+            
+            memoryImages.forEach((src, index) => {
+                const card = document.createElement('div');
+                card.className = `gallery-card glass rounded-3xl overflow-hidden cursor-pointer relative`;
+                
+                card.innerHTML = `
+                    <img src="${src}" 
+                         class="w-full h-80 object-cover"
+                         alt="Kenangan ${index + 1}"
+                         onerror="this.src='https://picsum.photos/id/1015/800/600';this.alt='Foto tidak ditemukan';">
+                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
+                        <p class="text-pink-200 text-sm">Memory #${index + 1}</p>
+                    </div>
+                `;
+                
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = (e.clientX - rect.left) / rect.width;
+                    const y = (e.clientY - rect.top) / rect.height;
+                    const rotX = (y - 0.5) * -25;
+                    const rotY = (x - 0.5) * 25;
+                    card.style.transform = `perspective(1200px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.05)`;
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'perspective(1200px) rotateX(0) rotateY(0) scale(1)';
+                });
+                
+                grid.appendChild(card);
+            });
+            
+            setTimeout(() => {
+                confetti({ particleCount: 120, angle: 90, spread: 70, origin: { x: 0.5, y: 0.8 } });
+            }, 800);
+        }
+
+        function toggleMusic() {
+            if (!audio) return;
+            musicPlaying = !musicPlaying;
+            const btn = document.getElementById('music-btn');
+            if (musicPlaying) {
+                audio.play();
+                btn.innerHTML = `<span id="music-icon">♪</span> Music On`;
+            } else {
+                audio.pause();
+                btn.innerHTML = `<span id="music-icon">♪</span> Music Off`;
+            }
+        }
+
+        window.onload = () => {
+            // Semua Tailwind & CDN sudah siap
+        };
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === '/' && !document.getElementById('main-content').classList.contains('hidden')) {
+                confetti({ particleCount: 50 });
+            }
+        });
+    </script>
 </body>
 </html>
